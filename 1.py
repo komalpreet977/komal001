@@ -9,13 +9,15 @@ while i<=6:
   phone_directory[a]=b
   print("record is added successfully")
 
+  print("\n PHONE DIRECTORY\n1. Add a record\n2. Search a record\n3. Update a record\n4. Sort the records alphabetically\n5. Delete a record\n6. Quit")
  elif i==2:
   a=input("enter search a record: ")
   if a in phone_directory:
-   c=phone_directory[a]
+   print(phone_directory[a])
   else:
    print("record not found")
 
+   print("\n PHONE DIRECTORY\n1. Add a record\n2. Search a record\n3. Update a record\n4. Sort the records alphabetically\n5. Delete a record\n6. Quit")
  elif i==3:
   a=input("enter name to serch:")
   b=input("enter new 10 digit phone number: ")
@@ -24,5 +26,30 @@ while i<=6:
    print("record updated")
   else:
    print("record not found")
+
+  print("\n PHONE DIRECTORY\n1. Add a record\n2. Search a record\n3. Update a record\n4. Sort the records alphabetically\n5. Delete a record\n6. Quit")
+ elif i==4:
+  a={"komal":8699978349,"seerat":6472239434}
+  mykeys=list(a.keys())
+  mykeys.sort()
+  print(mykeys)
+  sorted_dic={i:a[i] for i in mykeys}
+  print(sorted_dic)
+
+  print("\n PHONE DIRECTORY\n1. Add a record\n2. Search a record\n3. Update a record\n4. Sort the records alphabetically\n5. Delete a record\n6. Quit")
+ elif i==5:
+  a=input("enter name to delete")
+  if a in phone_directory:
+    phone_directory.pop(a)
+  else:
+    print("record deleted")
+
+  print("\n PHONE DIRECTORY\n1. Add a record\n2. Search a record\n3. Update a record\n4. Sort the records alphabetically\n5. Delete a record\n6. Quit")
+ elif i==6:
+  print("exit from whole program")
+
+
+
+
 
 
