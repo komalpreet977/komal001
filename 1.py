@@ -15,3 +15,14 @@ while i<=6:
    c=phone_directory[a]
   else:
    print("record not found")
+
+ elif i==3:
+  a=input("enter name to serch:")
+  b=input("enter new 10 digit phone number: ")
+  if a in phone_directory:
+   phone_directory[a]=b
+   print("record updated")
+  else:
+   print("record not found")
+
+
